@@ -10,6 +10,9 @@ import LanguageSkills from "./components/LanguageSkills";
 import ThingsILike from "./components/ThingsILike";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
+const GithubIcon = FaGithub as unknown as React.ElementType;
+const LinkedinIcon = FaLinkedin as unknown as React.ElementType;
+
 /* ---------------------- Tiny fade-up reveal animation --------------------- */
 function Reveal({
   children,
@@ -302,7 +305,7 @@ function Contact() {
               className="hover:text-purple-500 transition"
               aria-label="GitHub"
             >
-              <FaGithub />
+              <GithubIcon />
             </a>
             <a
               href="https://www.linkedin.com/in/aadarsha-chhetri-112580271/"
@@ -311,7 +314,7 @@ function Contact() {
               className="hover:text-purple-500 transition"
               aria-label="LinkedIn"
             >
-              <FaLinkedin />
+              <LinkedinIcon />
             </a>
           </div>
         </Reveal>
